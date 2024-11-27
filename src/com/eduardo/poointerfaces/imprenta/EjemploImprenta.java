@@ -20,12 +20,10 @@ public class EjemploImprenta {
         Informe info = new Informe("Los extraterrestres vienen del oceano",
                 new Persona("Juan", "Perez"), new Persona("Jaime", "Mausan"));
 
-        imprimir(cv);
-        imprimir(info);
-        imprimir(libro);
+        Imprimible.imprimir(cv);
+        Imprimible.imprimir(info);
+        Imprimible.imprimir(libro);
     }
 
-    public static void imprimir(Imprimible imprimible){
-        System.out.println(imprimible.imprimir());
-    }
+
 }
